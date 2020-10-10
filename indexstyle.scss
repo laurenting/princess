@@ -5,6 +5,9 @@
 ul,ol,li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 #header{
     height: 36px;
     background-color: #000;
@@ -13,7 +16,7 @@ ul,ol,li{
     width: 1200px;
     height: 36px;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
     font-size: 12px;
     color: #FFF;
 }
@@ -22,13 +25,22 @@ ul,ol,li{
     
     line-height: 36px;
 }
+.header-left img{
+    height: 14px;
+    margin-top: 5px;
+    display: inline-block;
+}
 .header-right{
     float: right;
     line-height: 36px;
-    border: 1px solid red;
+    // border: 1px solid red;
 
 }
 .header-right div{
+    float: left;
+    
+}
+.header-right span{
     float: left;
     margin: 0 10px;
 }
@@ -40,13 +52,13 @@ ul,ol,li{
 }
 .search{
     height: 160px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 .search-center{
     width: 1200px;
     height: 60px;
     margin: 50px auto;
-    border: 1px solid red;
+    // border: 1px solid red;
     
 }
 .search a{
@@ -94,4 +106,122 @@ ul,ol,li{
     text-align: center;
     color: #FFF;
     line-height: 38px;
+    float: left;
+}
+.mainnav-center>ul{
+    float: left;
+}
+.mainnav-center li{
+    float: left;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.mainnav-center a{
+    line-height: 38px;
+    color: #191919;
+    font-weight: bold;
+   
+}
+.mainnav-center a:hover,.mainnav-center .checked{
+    border-bottom: 2px solid #EA4141;
+    color: #EA4141;
+    font-size: 14px;
+}
+.banner-box{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.nav-left{
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #FFF;
+}
+.nav-left-item{
+    padding: 9px 15px;
+    font-size: 14px;
+}
+.nav-left-kind{
+    font-weight: bold;
+}
+.nav-left-content{
+    margin: 4px 0 0;
+}
+.nav-left-content>span{
+    padding: 0 6px 0 0;
+}
+.background{
+    background: #F5F5F5;
+}
+.seckill{
+    width: 1200px;
+    height: 263px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+.seckill-header{
+    width: 1200px;
+    border: 1px solid red;
+
+}
+.seckill-header h3{
+    float: left;
+}
+.seckill-header div{
+    float: left;
+}
+.seckill-goods{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 398px;
+    background: #FFF;
+}
+.seckill-goods img{
+    width: 170px;
+    height: 170px;
+}
+.seckill-goods-info{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.seckill-goods-info p{
+    overflow: hidden;
+    font-size: 12px;
+}
+.progress-bar{
+    width: 126px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    float: left;
+}
+.progress-text{
+    font-size: 12px;
+    float: right;
+}
+.seckill-price{
+    font-size: 14px;
+    color: red;
+}
+.seckill-price span{
+    color: #9E9E9E;
+    font-size: 12px;
+}
+.seckill-purchase{
+    width: 100px;
+    height: 30px;
+    background: red;
+    color: #FFF;
+    line-height: 30px;
+    text-align: center;
 }
