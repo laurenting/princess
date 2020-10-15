@@ -2,11 +2,14 @@ console.log("加载成功");
 
 require.config({
     paths:{
-        transform:"transformjson"
+        jquery:"jquery-1.11.3",
+        jquerycookie:"jquery.cookie",
+        nav:"transformjson"
     }
 })
 
-require(["transform"],function(transform){
-    console.log(transform);
+require(["nav"],function(nav){
+    // console.log(transform);
+    nav.download()
     
 })

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#header {
+  height: 36px;
+  background-color: #000; }
+
+.header-box {
+  width: 1200px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #FFF; }
+
+.header-left {
+  float: left;
+  line-height: 36px; }
+
+.header-left img {
+  height: 14px;
+  margin-top: 5px;
+  display: inline-block; }
+
+.header-right {
+  float: right;
+  line-height: 36px; }
+
+.header-right div {
+  float: left; }
+
+.header-right span {
+  float: left;
+  margin: 0 10px; }
+
+.header-right a {
+  color: #FFF;
+  line-height: 36px;
+  float: left;
+  text-decoration: none; }
+
+.search {
+  height: 160px; }
+
+.search-center {
+  width: 1200px;
+  height: 60px;
+  margin: 50px auto; }
+
+.search a {
+  float: left; }
+
+.search-box {
+  width: 510px;
+  height: 40px;
+  margin: 0 auto; }
+
+.logo {
+  width: 170px;
+  height: 54px; }
+
+.search-box input {
+  width: 440px;
+  height: 31px;
+  border: 2px solid black; }
+
+.search-box button {
+  width: 60px;
+  height: 40px;
+  background-color: black;
+  margin-left: -5px; }
+
+.bag {
+  float: right;
+  width: 25px;
+  height: 25px;
+  margin-top: -30px; }
+
+.mainnav {
+  height: 38px; }
+
+.mainnav-center {
+  width: 1200px;
+  margin: 0 auto; }
+
+.mainnav-center > div {
+  width: 258px;
+  height: 38px;
+  background-color: #191919;
+  text-align: center;
+  color: #FFF;
+  line-height: 38px;
+  float: left; }
+
+.mainnav-center > ul {
+  float: left; }
+
+.mainnav-center li {
+  float: left;
+  font-size: 14px;
+  padding: 0 20px; }
+
+.mainnav-center a {
+  line-height: 38px;
+  color: #191919;
+  font-weight: bold; }
+
+.mainnav-center a:hover, .mainnav-center .checked {
+  border-bottom: 2px solid #EA4141;
+  color: #EA4141;
+  font-size: 14px; }
+
+.allkindsof {
+  position: relative; }
+
+.allkindsof:hover .nav-left {
+  display: flex; }
+
+.nav-left {
+  width: 260px;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FFF;
+  color: #191919;
+  position: absolute;
+  top: 38px;
+  left: 0; }
+
+.nav-left-item {
+  padding: 9px 15px;
+  font-size: 14px; }
+
+.nav-left-kind {
+  font-weight: bold;
+  margin-left: -60%; }
+
+.nav-left-content {
+  margin: 2px 0 0; }
+
+.nav-left-content > span {
+  padding: 0 6px 0 6px; }
+
+.background {
+  background: #F5F5F5; }
