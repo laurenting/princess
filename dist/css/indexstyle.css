@@ -5,8 +5,9 @@
 ul, ol, li {
   list-style: none; }
 
-a {
-  text-decoration: none; }
+a, a:active {
+  text-decoration: none;
+  color: #000; }
 
 #header {
   height: 36px;
@@ -134,7 +135,8 @@ a {
   color: #191919;
   position: absolute;
   top: 38px;
-  left: 0; }
+  left: 0;
+  z-index: 9; }
 
 .nav-left-item {
   padding: 9px 15px;
@@ -262,3 +264,231 @@ a {
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px; }
+
+.bottom {
+  background-color: #FFF;
+  width: 100%; }
+
+.promise {
+  width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #e5e5e5; }
+
+.promise-item {
+  line-height: 24px;
+  margin: 0 61px;
+  float: left; }
+
+.promise-item-icon {
+  float: left; }
+
+.promise-item-icon > img {
+  width: 46px;
+  height: 46px;
+  margin-right: 13px; }
+
+.promise-item-info {
+  float: left; }
+
+.promise-item-info-title {
+  font-size: 20px;
+  letter-spacing: .33px; }
+
+.promise-item-info-content span {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: .33px; }
+
+.company-info {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 31px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-around; }
+
+.connect {
+  position: relative;
+  top: 18px;
+  padding: 30px 30px; }
+
+.logobox {
+  width: 160px;
+  height: 50px;
+  position: relative; }
+
+.logobox > img {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.connect-var {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  margin-top: 39px; }
+
+.connect-title {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  top: -25%; }
+
+.connect-weibo, .connect-wechat {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px; }
+
+.connect-var img {
+  width: 100%;
+  height: 100%; }
+
+.introduce {
+  width: 545px;
+  height: 155px;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 14px;
+  letter-spacing: .33px;
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  background-color: #fff;
+  line-height: 25px;
+  padding: 28px 28px 0; }
+
+.qrcode {
+  position: relative; }
+
+.codebox {
+  width: 110px;
+  height: 148px;
+  position: relative;
+  font-size: 12px;
+  text-align: center; }
+
+.codeimg {
+  width: 110px;
+  height: 110px; }
+
+.codeimg > img {
+  width: 100%;
+  height: 100%; }
+
+.code-redbelow {
+  color: #EA4141; }
+
+.blackbottom {
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+  color: #fff; }
+
+.black-center {
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 2;
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center; }
+
+.blackbottom a {
+  color: #fff;
+  display: inline-block;
+  padding: 0 4px; }
+
+.police {
+  border-style: none;
+  position: relative;
+  top: 4px;
+  left: -5px; }
+
+.signup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11; }
+
+.signupbox {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -240px;
+  padding: 30px 65px;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  width: 350px;
+  border: 1px solid #ddd; }
+
+.sign-items {
+  width: 350px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px; }
+
+.sign-title {
+  font-size: 20px;
+  text-align: center;
+  color: #444;
+  margin-bottom: 30px; }
+
+.sign-items > label {
+  position: absolute;
+  line-height: 42px;
+  font-size: 16px;
+  width: 60px; }
+
+.sign-items > input {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 40px;
+  width: 290px;
+  left: 60px;
+  font-size: 16px;
+  border: 1px solid #ddd; }
+
+.sign-items .verify-btn {
+  height: 40px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  min-width: 90px;
+  font-size: 14px;
+  padding: 0 10px; }
+
+.signupbox button {
+  display: block;
+  border: none;
+  background-color: #191919;
+  color: #fff; }
+
+.tips {
+  color: #666;
+  font-size: 12px;
+  text-align: center; }
+
+.submit-btn {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+  height: 45px; }
+
+.signupbox .login-btn {
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: underline; }
