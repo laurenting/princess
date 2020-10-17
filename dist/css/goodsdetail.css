@@ -488,3 +488,140 @@ a, a:active {
   position: relative;
   top: 4px;
   left: -5px; }
+
+.signup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+  display: none; }
+
+.signupbox {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -240px;
+  padding: 30px 65px;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  width: 350px;
+  border: 1px solid #ddd; }
+
+.sign-items {
+  width: 350px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px; }
+
+.sign-title {
+  font-size: 20px;
+  text-align: center;
+  color: #444;
+  margin-bottom: 30px; }
+
+.sign-items > label {
+  position: absolute;
+  line-height: 42px;
+  font-size: 16px;
+  width: 60px; }
+
+.sign-items > input {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 40px;
+  width: 290px;
+  left: 60px;
+  font-size: 16px;
+  border: 1px solid #ddd; }
+
+.sign-items .verify-btn {
+  height: 40px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  min-width: 90px;
+  font-size: 14px;
+  padding: 0 10px; }
+
+.signupbox button {
+  display: block;
+  border: none;
+  background-color: #191919;
+  color: #fff; }
+
+.tips {
+  color: #666;
+  font-size: 12px;
+  text-align: center; }
+
+.submit-btn {
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+  height: 45px; }
+
+.signupbox .login-btn {
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: underline; }
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+  display: none; }
+
+.close {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #9E9E9E;
+  border-radius: 50% 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 25px;
+  color: #9E9E9E;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  background-color: #FFF; }
+
+.qrcode-angle {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #fff; }
+
+.head-code {
+  position: absolute;
+  width: 160px;
+  height: 206px;
+  left: 100px;
+  border: 1px solid #efefef;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  background: #fff;
+  z-index: 1;
+  display: none; }
+
+.head-code > img {
+  width: 150px;
+  height: 150px;
+  margin-top: 5px; }
+
+.header-left:hover .head-code {
+  display: block; }

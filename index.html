@@ -11,7 +11,11 @@
 <body>
     <div id="header">
         <div class="header-box">
-            <div class="header-left"><img src="https://s.wandougongzhu.cn/s/af/icon_phone_70d313.png" alt=""> 下载豌豆公主APP</div>
+            <div class="header-left"><img src="https://s.wandougongzhu.cn/s/af/icon_phone_70d313.png" alt=""> 下载豌豆公主APP
+                <div class="head-code">
+                    <div class="qrcode-angle"></div>
+                    <img src="https://s1.wandougongzhu.cn/s/33/pc_e28b21.png" alt=""></div>
+            </div>
             <div class="header-right">
                 <div>请登录 免费注册</div>
                 <span>|</span>
@@ -33,38 +37,10 @@
         <div class="mainnav-center">
             <div class="allkindsof">全部商品分类
                 <div class="nav-left">
-                    <div class="nav-left-item">
+                    <!-- <div class="nav-left-item">
                         <div class="nav-left-kind">护肤美妆</div>
                         <div class="nav-left-content"><span>面膜</span>|<span>妆前隔离</span>|<span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
-                    <div class="nav-left-item">
-                        <div class="nav-left-kind">护肤美妆</div>
-                        <div class="nav-left-content"><span>面膜</span><span>妆前隔离</span><span>化妆棉</span></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <ul>
@@ -81,31 +57,53 @@
         </div>
     </div>
     <div class="background">
-        <div class="banner">
-            <div class="banner-box">
-                
-                <!-- <div class="banner-right">轮播图</div> -->
-            </div>
+        <div class="banner-area">
+            <div class="banner">
+                <ul class="imgBox clearFix">
+                    
+                  <!-- 左右都能够进行循环轮播效果 -->
+                  <!-- <li style="background-color: yellow">5</li>
+                  <li style="background-color: red">1</li>
+                  <li style="background-color: orange">2</li>
+                  <li style="background-color: green">3</li>
+                  <li style="background-color: pink">4</li>
+                  <li style="background-color: yellow">5</li>
+                  <li style="background-color: red">1</li> -->
+                </ul>
+          
+                <ol class="pointBox">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+          
+                <div class="leftRightTabs">
+                  <a href="#" class="left"><</a>
+                  <a href="#" class="right">></a>
+                </div>
+              </div>
         </div>
         <div class="seckill">
             <div class="seckill-header">
                 <h3>今日秒杀</h3>
-                <div>距结束还有<span>00</span></div>
+                <div>距结束还有<span class="lasttime">00:00</span></div>
             </div>
-            <div class="seckill-goods">
+            <div class="seckill-goods id1" >
                 <img src="https://oss2.wandougongzhu.cn/9f9735f0fed999c24172bb199579d50f.png?x-oss-process=image/resize,w_500,h_4000/format,webp" alt="">
                 <div class="seckill-goods-info">
                     <div class="seckill-goods-title">氨基酸式的清洁保湿</div>
                     <p>FREEPLUS 芙丽芳丝 净润洗面奶</p>
                     <div class="progress">
-                        <div class="progress-bar"></div>
-                        <div class="progress-text">售出5%</div>
+                        <div class="progress-bar"><div class="bar-inner"></div></div>
+                        <div class="progress-text">售出<span class="progress-num">5</span>%</div>
                     </div>
                     <div class="seckill-price">¥215 <span>省100</span></div>
                     <div class="seckill-purchase">立即抢购</div>
                 </div>
             </div>
-            <div class="seckill-goods">
+            <div class="seckill-goods" class="id2">
                 <img src="https://oss2.wandougongzhu.cn/9f9735f0fed999c24172bb199579d50f.png?x-oss-process=image/resize,w_500,h_4000/format,webp" alt="">
                 <div class="seckill-goods-info">
                     <div class="seckill-goods-title">氨基酸式的清洁保湿</div>
@@ -263,8 +261,28 @@
                     <button type="submit" class="submit-btn">注册</button>
                     <div class="sign-items login-btn">我有账号，立即登录</div>
                 </div>
+                <div class="close">×</div>
             </form>
     </div>
-    <div class="login"></div>
+    <div class="login">
+        <form class="signupbox">
+            <div>
+                <h2 class="sign-title">登陆</h2>
+                <div class="sign-items ">
+                    <label for="phone">手机号</label>
+                    <input placeholder="手机号码" name="phone" type="number" autocomplete="off" class="sign-phone">
+                </div>
+               
+                <div class="sign-items ">
+                    <label for="psw">密码</label>
+                    <input placeholder="密码" name="psw" type="number" autocomplete="off" class="sign-psw">
+                </div>
+                
+                <button type="submit" class="submit-btn" id="login">登陆</button>
+                <div class="sign-items login-btn">没有账号？立即注册</div>
+            </div>
+            <div class="close">×</div>
+        </form>
+    </div>
 </body>
 </html>
