@@ -603,6 +603,9 @@ a,a:active{
     font-size: 12px;
     text-decoration: underline;
 }
+#login{
+    margin-right: 5px;
+}
 .login{
     // display: none;
     position: fixed;
@@ -659,4 +662,42 @@ a,a:active{
 }
 .header-left:hover .head-code{
     display: block;
+}
+.side{
+    position: fixed;
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    right: 0;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-shadow: 0 0 4px rgba(0,0,0,.14);
+}
+.side-items{
+    width: 90px;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.side-icon{
+    width: 100%;
+    text-align: center;
+
+}
+.side-icon-hover{
+    width: 100%;
+    text-align: center;
+
+    display: none;
+}
+.side-title{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
 }

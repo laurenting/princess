@@ -90,5 +90,43 @@ define(["jquery","jquery-cookie"], function ($){
             }
         })
     }
-    return {download}
+    function login(){
+        $("#login").on("click",function(){
+            $(".login").css("display","block");
+        })
+    }
+    function signup(){
+        $("#signup").on("click",function(){
+            $(".signup").css("display","block");
+        })
+    }
+    function close(){
+        $(".close").on("click",function(){
+            $(".login").css("display","none");
+            $(".signup").css("display","none");
+        })
+    }
+    function gotop(){
+        $("#gotop").on("click",function(){
+            // document.body.scrollTop=0;
+            clearInterval(timer);
+            var timer = setInterval(function(){
+                var now = document.documentElement.scrollTop;
+                // var distance = null;
+                var speed = (0-now)  / 8;
+                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                now = now + speed;
+                document.documentElement.scrollTop = now;
+                // console.log(now);
+                if(now == 0){
+                    clearInterval(timer);;
+                }
+            },20)
+        })
+    }
+    return {download
+    ,signup
+    ,close
+    ,login
+    ,gotop}
 })

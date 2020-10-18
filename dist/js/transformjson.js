@@ -130,6 +130,29 @@ define(["jquery"], function ($) {
 
         
         //多物体多样式的运动   startMove(this, "width", 300);
+
+}
+function gotop(){
+    $("#gotop").on("click",function(){
+        // document.body.scrollTop=0;
+        clearInterval(timer);
+        var timer = setInterval(function(){
+            var now = document.documentElement.scrollTop;
+            // var distance = null;
+            var speed = (0-now)  / 8;
+            speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+            now = now + speed;
+            document.documentElement.scrollTop = now;
+            // console.log(now);
+            if(now == 0){
+                clearInterval(timer);;
+            }
+        },20)
+        
+
+    })
+}
+
 function startMove(node, cssObj, complete){ //complete = show;
     clearInterval(node.timer);
     node.timer = setInterval(function(){
@@ -176,8 +199,6 @@ function startMove(node, cssObj, complete){ //complete = show;
             }
         }
     }, 30);
-}
-
 /*
     node  元素节点
     cssStyle  获取css样式类型
@@ -238,6 +259,7 @@ function getStyle(node, cssStyle){
         killbar,
         login,
         signup,
-        close
+        close,
+        gotop
     }
 })

@@ -13,4 +13,8 @@ require(["detail"],function(detail){
     // console.log(transform);
     // detail.download();//ajax 导入商品列表
     detail.download();
+    detail.login();
+    detail.signup();
+    detail.close();
+    detail.gotop();
 })

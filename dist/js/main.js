@@ -51,6 +51,7 @@ require(["nav"],function(nav){
     nav.login();
     nav.signup();
     nav.close();
+    nav.gotop();
     //signup 
     //login
 })
