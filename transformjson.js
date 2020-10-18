@@ -251,6 +251,11 @@ function getStyle(node, cssStyle){
             $(".signup").css("display","none");
         })
     }
+    function tocar(){
+        $("#car").on("click",function(){
+            window.location.href = 'http://localhost:2333/car.html'
+        })
+    }
     return {
         download,
         banner,
@@ -260,6 +265,7 @@ function getStyle(node, cssStyle){
         login,
         signup,
         close,
-        gotop
+        gotop,
+        tocar
     }
 })

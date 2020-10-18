@@ -18,6 +18,12 @@ define(["jquery","jquery-cookie"], function ($){
         $.ajax({
             url: "../data/data.json",
             success: function (result) {
+                for(var k =0;k<result[1].length;k++){
+                    $(`<div class="nav-left-item">
+                    <div class="nav-left-kind">${result[1][k].head}</div>
+                    <div class="nav-left-content"><span>${result[1][k].content[0]}</span>|<span>${result[1][k].content[1]}</span>|<span>${result[1][k].content[2]}</span></div>
+                </div>`).appendTo(".nav-left");
+                }
                 for (var i = 0; i < result.length; i++) {
                     if ((result[i].type == "goods" )&&(result[i].data.goods_id == goodsid )) {
                        console.log(result[i].data);

@@ -21,6 +21,15 @@ gulp.task("scss1",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload())
 })
+gulp.task("scss-car",function(){
+    return gulp.src("./car.scss")
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifycss())
+    .pipe(rename("car.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload())
+})
 gulp.task("scssAll",function(){
     return gulp.src("./*.scss")
     .pipe(scss())
@@ -52,13 +61,14 @@ gulp.task("images",function(){
 })
 
 
-gulp.task("all",['scss','scssAll','scripts','copy-html','data','images'],function(){
-    console.log('全部执行完毕')
-})
+// gulp.task("all",['scss','scssAll','scripts','copy-html','data','images'],function(){
+//     console.log('全部执行完毕')
+// })
 
 gulp.task("watch",function(){
     gulp.watch("./indexstyle.scss",["scss"]);
     gulp.watch("./goodsdetail.scss",["scss1"]);
+    gulp.watch("./car.scss",["scss-car"]);
     gulp.watch("./*.scss",["scssAll"]);
     gulp.watch(["*.js","!gulpfile.js"],["scripts"]);
     gulp.watch("*.html",["copy-html"]);
