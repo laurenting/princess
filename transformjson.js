@@ -214,11 +214,30 @@ function getStyle(node, cssStyle){
         var wide = 1.26*progress;
         $(".id1 .bar-inner").css("width",`${wide}`).css("background-color","orangered");
     }
+    function login(){
+        $("#login").on("click",function(){
+            $(".login").css("display","block");
+        })
+    }
+    function signup(){
+        $("#signup").on("click",function(){
+            $(".signup").css("display","block");
+        })
+    }
+    function close(){
+        $(".close").on("click",function(){
+            $(".login").css("display","none");
+            $(".signup").css("display","none");
+        })
+    }
     return {
         download,
         banner,
         transform,
         killtime,
-        killbar
+        killbar,
+        login,
+        signup,
+        close
     }
 })

@@ -642,3 +642,6 @@ div.banner {
   align-items: center;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4); }
+
+#login {
+  margin-right: 5px; }

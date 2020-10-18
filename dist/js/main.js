@@ -48,6 +48,9 @@ require(["nav"],function(nav){
     // nav.transform();
     nav.killtime();
     nav.killbar();
+    nav.login();
+    nav.signup();
+    nav.close();
     //signup 
     //login
 })
