@@ -17,4 +17,5 @@ require(["car"],function(car){
     car.signup();
     car.close();
     car.gotop();
+    // car.drop();
 })
