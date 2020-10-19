@@ -17,4 +17,5 @@ require(["detail"],function(detail){
     detail.signup();
     detail.close();
     detail.gotop();
+    detail.tocar();
 })

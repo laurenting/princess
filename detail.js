@@ -171,10 +171,16 @@ define(["jquery","jquery-cookie"], function ($){
             },20)
         })
     }
+    function tocar(){
+        $("#car").on("click",function(){
+            window.location.href = 'http://localhost:2333/car.html';
+        })
+    }
     return {download
     ,signup
     ,close
     ,login
     ,gotop
+    ,tocar
     }
 })
