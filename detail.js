@@ -76,8 +76,8 @@ define(["jquery","jquery-cookie"], function ($){
                                </div>
                            </div>
                            <div class="goods-btns">
-                               <div class="btn-purchase">
-                                   <div class="sell-btn"><img src="https://s.wandougongzhu.cn/s/ba/2x_f39585.png" alt="">加入购物车</div>
+                               <div class="btn-purchase" id="${result[i].data.goods_id}">
+                                   <div class="sell-btn" ><img src="https://s.wandougongzhu.cn/s/ba/2x_f39585.png" alt="">加入购物车</div>
                                </div>
                                <div class="btn-collect">
                                    <div class="collect-btn"><img src="https://s4.wandougongzhu.cn/s/e6/123_9153b3.png" alt="">收藏</div>
@@ -85,6 +85,47 @@ define(["jquery","jquery-cookie"], function ($){
                            </div>
                        </div>
                     </div>`).appendTo(".mainbody");
+                    
+                    //数量+
+                    $(".plus").on("click",function(){
+                        var many = $(".goods-count-num").html();
+                        many = Number(many) + 1;
+                        $(".goods-count-num").html(many);
+                    })
+                    $(".minus").on("click",function(){
+                        var many = $(".goods-count-num").html();
+                        many = (Number(many) - 1) < 1 ? 1 : (Number(many) - 1);
+                        $(".goods-count-num").html(many);
+                    })
+                    $(".btn-purchase").on("click",function(){
+                        var many = $(".goods-count-num").html();
+                        many = Number(many);
+                        var id = this.id;
+                        var first = $.cookie("goods")== null ? true : false;
+                        if(first){
+                            var cookieArr = [{id:id,num:many}];
+                            $.cookie("goods",JSON.stringify(cookieArr),{
+                                expires:7
+                            });
+                        }else{
+                            var same  = false;
+                            var cookieStr = $.cookie("goods");
+                            var cookieArr = JSON.parse(cookieStr);
+                            for(var i = 0;i < cookieArr.length;i++){
+                                if(cookieArr[i].id == id){
+                                    cookieArr[i].num += many;
+                                    same = true;
+                                    break;
+                                }
+                            }
+                            if(!same){
+                                var obj = {id:id,num:many};
+                                cookieArr.push(obj);
+                            }
+                            $.cookie("goods",JSON.stringify(cookieArr));
+                        }
+                        console.log($.cookie("goods"));
+                    })
                     } else {
                         continue
                     }
@@ -134,5 +175,6 @@ define(["jquery","jquery-cookie"], function ($){
     ,signup
     ,close
     ,login
-    ,gotop}
+    ,gotop
+    }
 })
